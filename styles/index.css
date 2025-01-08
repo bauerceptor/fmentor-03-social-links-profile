@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --clr-active: hsl(75, 94%, 57%);
+    --clr-text-pri: hsl(0, 0%, 100%);
+    --clr-main-pri: hsl(0, 0%, 12%);
+    --clr-main-sec: hsl(0, 0%, 20%);
+    --clr-bg: hsl(0, 0%, 8%);
+    --font-family: 'Inter', sans-serif;
+    --font-400: 400;
+    --font-600: 600;
+    --font-700: 700;
+
+    font-size: 14px;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--clr-bg);
+    font-family: var(--font-family);
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    place-items: center;
+    background-color: var(--clr-main-pri);
+    width: 30rem;
+    height: 45rem;
+    border-radius: 1rem;
+}
+
+.user-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    place-items: center;
+    height: 20rem;
+}
+
+.user-avatar {
+    border-radius: 6rem;
+    width: 40%;
+    height: auto;
+}
+
+.user-name {
+    font-weight: var(--font-600);
+    font-size: 2rem;
+    color: var(--clr-text-pri);
+}
+
+.user-location {
+    color: var(--clr-active);
+}
+
+.user-summary {
+    color: var(--clr-text-pri);
+}
+
+.user-social-handles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    place-items: center;
+    align-items: stretch;
+    height: 24rem;
+}
+
+.button {
+    background-color: var(--clr-main-sec);
+    color: var(--clr-text-pri);
+    font-weight: var(--font-700);
+    font-size: 1rem;
+    padding: 1rem 8rem;
+    border-radius: .6rem;
+    text-decoration: none;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: var(--clr-active);
+    color: var(--clr-main-sec);
+    font-weight: var(--font-700);
+    cursor: pointer;
+}
+
+
+/* MEDIA QUERIES */
+
+
+@media screen and (max-width: 480px) {
+
+    :root {
+        font-size: 12px;
+    }
+
+}
+
+
+@media screen and (max-width: 380px) {
+
+    :root {
+        font-size: 10px;
+    }
+
+}
