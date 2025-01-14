@@ -6,7 +6,7 @@ Responsive Social links profile designed using semantic markup with CSS.
 
 ![Preview image of Social links profile](./preview.jpg)
 
-Check out this component live by follow the link below:
+Check out this component live by following the link below:
 
 - [Live Site](https://bauerceptor.github.io/fmentor-03-social-links-profile/)
 
